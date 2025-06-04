@@ -8,11 +8,10 @@ import org.apache.http.HttpStatus;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class TodoService implements CrudInterface {
     public static final String TODOS_END_POINT = "/todos";
 
-    private List<Long> createdTodos = new ArrayList();
+    private final List<Long> createdTodos = new ArrayList<Long>();
 
     public List<Long> getCreatedTodos() {
         return createdTodos;
