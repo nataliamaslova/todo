@@ -3,19 +3,17 @@ package api.requests;
 import api.models.Todo;
 import api.specs.Specifications;
 import io.restassured.RestAssured;
+import lombok.Getter;
 import org.apache.http.HttpStatus;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class TodoService implements CrudInterface {
     public static final String TODOS_END_POINT = "/todos";
 
-    private final List<Long> createdTodos = new ArrayList<Long>();
-
-    public List<Long> getCreatedTodos() {
-        return createdTodos;
-    }
+    private final List<Long> createdTodos = new ArrayList<>();
 
     @Override
     public void create(Todo todo) {
