@@ -2,18 +2,17 @@
 GET localhost:8082/todos
 Content-Type: application/json
 
-#### GET request one element: not implemented
+### GET request one element: not implemented
 #GET localhost:8082/todos/1
 #Content-Type: application/json
 
-### POST request
+### POST request ###  "text": "first post",
 POST localhost:8082/todos
 Content-Type: application/json
 
 {
   "id": 1,
-  "text": "first post",
-  "completed": true
+  "text": "first post"
 }
 
 ### PUT request
@@ -21,12 +20,12 @@ PUT localhost:8082/todos/1
 Content-Type: application/json
 
 {
-  "id": 1,
+  "id": "abc",
   "text": "first updated post",
   "completed": false
 }
 
 ### DELETE request
-DELETE localhost:8082/todos/1
+DELETE localhost:8082/todos/72
 Content-Type: application/json
 Authorization: Basic YWRtaW46YWRtaW4=

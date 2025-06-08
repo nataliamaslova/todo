@@ -22,9 +22,16 @@ public class Specifications {
         var requestBuilder = reqBuilder();
         return requestBuilder.build();
     }
+
     public static RequestSpecification authSpec() {
         var requestBuilder = reqBuilder();
         requestBuilder.setAuth(preemptive().basic("admin", "admin"));
+        return requestBuilder.build();
+    }
+
+    public static RequestSpecification invalidAuthSpec() {
+        var requestBuilder = reqBuilder();
+        requestBuilder.setAuth(preemptive().basic("user", "user"));
         return requestBuilder.build();
     }
 }
