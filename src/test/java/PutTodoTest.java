@@ -9,22 +9,21 @@ import org.junit.jupiter.api.Test;
 /**
  * PUT /todos/:id
  * Test Cases (Max 5):
- * <p>
  * 1. Update existing TODO by ID with valid fields
  * Expect: 200 OK, updated TODO returned.
- * <p>
+ *
  * 2. Update TODO that does not exist
  * Expect: 404 Not Found
- * <p>
+ *
  * 3. Update TODO with incomplete body (e.g. missing text)
  * Expect: 400 Bad Request
- * <p>
+ *
  * 4. Update TODO with invalid Type format (e.g. string instead of boolean for completed)
  * Expect: 400 Bad Request
- * <p>
+ *
  * 5. Update TODO with valid ID but empty text
  * Expect: 200 OK or validation error (depends on business rules)
- * <p>
+ *
  * Checklist for Future:
  * 6. Concurrent update handling
  * 7. Validation of field immutability (if any)
@@ -37,7 +36,7 @@ public class PutTodoTest extends BaseTest {
     //  1. Update existing TODO by ID with valid fields
     //     Expect: 200 OK, updated TODO returned.
     @Test
-    public void userCanBeAbleUpdateTodo() {
+    public void userCanUpdateTodo() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
         Todo updatedTodo = TestDataGenerator.generate(Todo.class);
@@ -58,14 +57,12 @@ public class PutTodoTest extends BaseTest {
 
         // 2. Act for test
         todoService.update(updatedTodo.getId(), updatedTodo, HttpStatus.SC_NOT_FOUND);
-
-        // 3. Verification impossible: service doesn't return entity as expected
     }
 
     // 3. Update TODO with incomplete body (e.g. missing text)
     // Expect: 400 Bad Request
     @Test
-    public void userCanNotBeAbleUpdateTodoWithIncompleteBody() {
+    public void userCanNotUpdateTodoWithIncompleteBody() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
         Todo invalidTodo = Todo.builder()
@@ -82,7 +79,7 @@ public class PutTodoTest extends BaseTest {
     // 4. Update TODO with invalid Type format (e.g. string instead of boolean for completed)
     //    Expect: 400 Bad Request
     @Test
-    public void userCanNotBeAbleUpdateTodoWithInvalidTypeFormat() {
+    public void userCanNotUpdateTodoWithInvalidTypeFormat() {
         // 1. Prepare data
         final long id = 100500;
         todo.setId(id);
@@ -113,7 +110,7 @@ public class PutTodoTest extends BaseTest {
     //  5. Update TODO with valid ID but empty text
     //     Expect: 200 OK or validation error (depends on business rules)
     @Test
-    public void userCanBeAbleUpdateTodoWithEmptyText() {
+    public void userCanUpdateTodoWithEmptyText() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
         Todo updatedTodo = TestDataGenerator.generate(Todo.class);

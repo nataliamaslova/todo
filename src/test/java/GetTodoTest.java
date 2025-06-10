@@ -43,7 +43,7 @@ public class GetTodoTest extends BaseTest {
     //  1. Get all TODOs with no query parameters
     //     Expect: 200 OK, full list returned.
     @Test
-    public void userCanBeAbleReadTodo() {
+    public void userCanReadTodo() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
 
@@ -57,7 +57,7 @@ public class GetTodoTest extends BaseTest {
     //     Input: limit=2, offset=1
     //     Expect: 200 OK, correct subset returned.
     @Test
-    public void userCanBeAbleReadTodoWithQueryParams() {
+    public void userCanReadTodoWithQueryParams() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
         queryParams.put("limit", "2");
@@ -65,49 +65,41 @@ public class GetTodoTest extends BaseTest {
 
         // 2. Act for test
         todoService.read(queryParams, HttpStatus.SC_OK);
-
-        // 3. Verification impossible: service doesn't return entity as expected
     }
 
     // 3. Get TODOs with limit=0
     //    Expect: 200 OK, empty array returned.
     @Test
-    public void userCanBeAbleReadTodoWithLimitZero() {
+    public void userCanReadTodoWithLimitZero() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
         queryParams.put("limit", "0");
 
         // 2. Act for test
         todoService.read(queryParams, HttpStatus.SC_OK);
-
-        // 3. Verification impossible: service doesn't return entity as expected
     }
 
     // 4. Get TODOs with large limit (e.g. 1000)
     //    Expect: 200 OK, capped or full list depending on available data.
     @Test
-    public void userCanBeAbleReadTodoWithLargeLimit() {
+    public void userCanReadTodoWithLargeLimit() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
         queryParams.put("limit", "1000");
 
         // 2. Act for test
         todoService.read(queryParams, HttpStatus.SC_OK);
-
-        // 3. Verification impossible: service doesn't return entity as expected
     }
 
     // 5. Get TODOs with invalid limit (e.g. limit=-5)
     //    Expect: 400 Bad Request or fallback to default behavior
     @Test
-    public void userCanNotBeAbleReadTodoWithNegativeLimit() {
+    public void userCanNotReadTodoWithNegativeLimit() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
         queryParams.put("limit", "-5");
 
         // 2. Act for test
         todoService.read(queryParams, HttpStatus.SC_BAD_REQUEST);
-
-        // 3. Verification impossible: service doesn't return entity as expected
     }
 }

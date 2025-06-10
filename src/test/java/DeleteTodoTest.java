@@ -27,15 +27,14 @@ import org.junit.jupiter.api.Test;
  *
  * Checklist for Future:
  *  6. Attempt delete on already deleted resource
- *  7. Audit that only admin users can delete
- *  8. Attempt batch delete (if unsupported)
- *  9. Rate limit for delete operations
- * 10. Check response when no content is returned
+ *  7. Attempt batch delete (if unsupported)
+ *  8. Rate limit for delete operations
+ *  9. Check response when no content is returned
  */
 public class DeleteTodoTest extends BaseTest {
 
     @Test
-    public void userCanBeAbleDeleteTodo() {
+    public void userCanDeleteTodo() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
 
@@ -48,14 +47,14 @@ public class DeleteTodoTest extends BaseTest {
     //  2. Delete non-existent TODO with correct credentials
     //     Expect: 404 Not Found
     @Test
-    public void userCanNotBeAbleDeleteNonExistentTodo() {
+    public void userCanNotDeleteNonExistentTodo() {
         todoService.delete(Specifications.authSpec(), todo.getId(), HttpStatus.SC_NOT_FOUND);
     }
 
     // 3. Delete TODO without Authorization header
     //    Expect: 401 Unauthorized
     @Test
-    public void userCanNotBeAbleDeleteTodoWithoutAuthorization() {
+    public void userCanNotDeleteTodoWithoutAuthorization() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
 
@@ -66,7 +65,7 @@ public class DeleteTodoTest extends BaseTest {
     // 4. Delete TODO with invalid credentials
     //    Expect: 401 Unauthorized
     @Test
-    public void userCanNotBeAbleDeleteTodoWithInvalidCredentials() {
+    public void userCanNotDeleteTodoWithInvalidCredentials() {
         // 1. Prepare data
         todoService.create(todo, HttpStatus.SC_CREATED);
 
@@ -77,7 +76,7 @@ public class DeleteTodoTest extends BaseTest {
     // 5. Delete TODO with malformed ID (e.g. /todos/abc)
     //    Expect: 400 Bad Request
     @Test
-    public void userCanNotBeAbleDeleteTodoWithMalformedId() {
+    public void userCanNotDeleteTodoWithMalformedId() {
         // Act for test
         RestAssured
                 .given()

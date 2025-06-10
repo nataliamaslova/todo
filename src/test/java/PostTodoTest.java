@@ -34,7 +34,7 @@ public class PostTodoTest extends BaseTest {
     // 1. Create a TODO with valid id, text, and completed
     //    Expect: 201 Created, TODO returned with exact input.
     @Test
-    public void userCanBeAbleCreateValidTodo() {
+    public void userCanCreateValidTodo() {
         todoService.create(todo, HttpStatus.SC_CREATED);
 
         // Verification impossible: service doesn't return entity as expected
@@ -43,7 +43,7 @@ public class PostTodoTest extends BaseTest {
     //  2. Create a TODO with missing field: e.g. text
     //     Expect: 400 Bad Request
     @Test
-    public void userCanBeInformedOnMissedField() {
+    public void userCanBeInformedAboutMissedField() {
         Todo invalidTodo = Todo.builder()
                 .id(100500)
                 .completed(false)
@@ -69,7 +69,7 @@ public class PostTodoTest extends BaseTest {
     //  4. Create a TODO with excessively long text
     //     Expect: 413 PayLoad Too Large
     @Test
-    public void userCanBeInformedOnTooLongText() {
+    public void userCanBeInformedAboutTooLongText() {
         todo.setText(TestDataGenerator.generateString(17000));
 
         todoService.create(todo, HttpStatus.SC_REQUEST_TOO_LONG);
