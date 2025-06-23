@@ -3,8 +3,10 @@ package api.requests;
 import api.models.Todo;
 import api.specs.Specifications;
 import io.restassured.RestAssured;
+import io.restassured.common.mapper.TypeRef;
 import io.restassured.specification.RequestSpecification;
 import lombok.Getter;
+import lombok.Setter;
 import org.apache.http.HttpStatus;
 
 import java.util.ArrayList;
@@ -12,10 +14,11 @@ import java.util.List;
 import java.util.Map;
 
 @Getter
+@Setter
 public class TodoService implements CrudInterface {
     public static final String TODOS_END_POINT = "/todos";
 
-    private final List<Long> createdTodos = new ArrayList<>();
+    private List<Long> createdTodos = new ArrayList<>();
 
     @Override
     public void create(Todo todo, int httpStatus) {
@@ -32,15 +35,17 @@ public class TodoService implements CrudInterface {
     }
 
     @Override
-    public void read(Map<String, String> queryParams, int httpStatus) {
-        RestAssured
+    public List<Todo> read(Map<String, String> queryParams, int httpStatus) {
+        return RestAssured
                 .given()
                 .queryParams(queryParams)
                 .spec(Specifications.unAuthSpec())
                 .when()
                 .get(TODOS_END_POINT)
                 .then()
-                .statusCode(httpStatus);
+                .statusCode(httpStatus)
+                .extract()
+                .as(new TypeRef<List<Todo>>() {});
     }
 
     @Override

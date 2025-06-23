@@ -39,6 +39,10 @@ Delete an existing TODO.
 The endpoint requires the Authorization request header containing the admin:admin credentials in the Basic authorization schema.
 
 ## Summary
+
+### 0. Почему нет ответа на POST/PUT?
+Response body is empty
+
 ### 1. Functional testing
 Implemented 20 tests for CRUD operations:
 

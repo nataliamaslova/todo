@@ -12,7 +12,8 @@ Content-Type: application/json
 
 {
   "id": 1,
-  "text": "first post"
+  "text": "first post",
+  "completed": true
 }
 
 ### PUT request
@@ -20,12 +21,12 @@ PUT localhost:8082/todos/1
 Content-Type: application/json
 
 {
-  "id": "abc",
+  "id": 1,
   "text": "first updated post",
   "completed": false
 }
 
 ### DELETE request
-DELETE localhost:8082/todos/72
+DELETE localhost:8082/todos/1
 Content-Type: application/json
 Authorization: Basic YWRtaW46YWRtaW4=

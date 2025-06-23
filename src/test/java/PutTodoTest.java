@@ -6,6 +6,10 @@ import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 /**
  * PUT /todos/:id
  * Test Cases (Max 5):
@@ -37,25 +41,27 @@ public class PutTodoTest extends BaseTest {
     //     Expect: 200 OK, updated TODO returned.
     @Test
     public void userCanUpdateTodo() {
-        // 1. Prepare data
+        // 1. Arrange
         todoService.create(todo, HttpStatus.SC_CREATED);
         Todo updatedTodo = TestDataGenerator.generate(Todo.class);
         updatedTodo.setId(todo.getId());
 
-        // 2. Act for test
+        // 2. Act
         todoService.update(todo.getId(), updatedTodo, HttpStatus.SC_OK);
 
-        // 3. Verification impossible: service doesn't return entity as expected
+        // 3. Assert
+        List<Todo> todos = todoService.read(queryParams, HttpStatus.SC_OK);
+        assertThat(todos).isEqualTo(List.of(updatedTodo));
     }
 
     // 2. Update TODO that does not exist
     //    Expect: 404 Not Found
     @Test
     public void userCanNotUpdateNonExistentTodo() {
-        // 1. Prepare data
+        // 1. Arrange
         Todo updatedTodo = TestDataGenerator.generate(Todo.class);
 
-        // 2. Act for test
+        // 2. Act and 3. Assert status code
         todoService.update(updatedTodo.getId(), updatedTodo, HttpStatus.SC_NOT_FOUND);
     }
 
@@ -70,7 +76,7 @@ public class PutTodoTest extends BaseTest {
                 .completed(false)
                 .build();
 
-        // 2. Act for test
+        // 2. Act and 3. Assert status code
         todoService.update(todo.getId(), invalidTodo, HttpStatus.SC_BAD_REQUEST);
 
         // 400 Bad Request expected, but actual: 401 Unauthorized
@@ -80,7 +86,7 @@ public class PutTodoTest extends BaseTest {
     //    Expect: 400 Bad Request
     @Test
     public void userCanNotUpdateTodoWithInvalidTypeFormat() {
-        // 1. Prepare data
+        // 1. Arrange
         final long id = 100500;
         todo.setId(id);
         todoService.create(todo, HttpStatus.SC_CREATED);
@@ -93,7 +99,7 @@ public class PutTodoTest extends BaseTest {
                 }
                 """;
 
-        // 2. Act for test
+        // 2. Act and 3. Assert status code
         RestAssured
                 .given()
                 .spec(Specifications.unAuthSpec())
@@ -111,15 +117,17 @@ public class PutTodoTest extends BaseTest {
     //     Expect: 200 OK or validation error (depends on business rules)
     @Test
     public void userCanUpdateTodoWithEmptyText() {
-        // 1. Prepare data
+        // 1. Arrange
         todoService.create(todo, HttpStatus.SC_CREATED);
         Todo updatedTodo = TestDataGenerator.generate(Todo.class);
         updatedTodo.setId(todo.getId());
         updatedTodo.setText("");
 
-        // 2. Act for test
+        // 2. Act
         todoService.update(todo.getId(), updatedTodo, HttpStatus.SC_OK);
 
-        // 3. Verification impossible: service doesn't return entity as expected
+        // 3. Assert
+        List<Todo> todos = todoService.read(queryParams, HttpStatus.SC_OK);
+        assertThat(todos).isEqualTo(List.of(updatedTodo));
     }
 }

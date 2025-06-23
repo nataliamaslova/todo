@@ -6,7 +6,6 @@ import java.util.Comparator;
 import java.util.List;
 
 public class PostPerformanceTest extends BaseTest {
-    public static final int REQUESTS_COUNT = 100;
 
     @Test
     public void userCanEstimatePerformanceForPOST() {
