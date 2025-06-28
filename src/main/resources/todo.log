@@ -1,0 +1,403 @@
+2025-06-10T09:37:09.515101Z DEBUG create_todo: Todo { id: 0, text: "test_0", completed: true }
+2025-06-10T09:37:09.515241Z  INFO 172.17.0.1:43964 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 405.564µs
+2025-06-10T09:37:09.623913Z DEBUG create_todo: Todo { id: 1, text: "test_1", completed: true }
+2025-06-10T09:37:09.623973Z  INFO 172.17.0.1:43980 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 103.183µs
+2025-06-10T09:37:09.661527Z DEBUG create_todo: Todo { id: 2, text: "test_2", completed: true }
+2025-06-10T09:37:09.661585Z  INFO 172.17.0.1:43984 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 100.997µs
+2025-06-10T09:37:09.693563Z DEBUG create_todo: Todo { id: 3, text: "test_3", completed: true }
+2025-06-10T09:37:09.693617Z  INFO 172.17.0.1:44000 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 108.821µs
+2025-06-10T09:37:09.718867Z DEBUG create_todo: Todo { id: 4, text: "test_4", completed: true }
+2025-06-10T09:37:09.718924Z  INFO 172.17.0.1:44012 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 104.271µs
+2025-06-10T09:37:09.745352Z DEBUG create_todo: Todo { id: 5, text: "test_5", completed: true }
+2025-06-10T09:37:09.745384Z  INFO 172.17.0.1:44026 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 74.106µs
+2025-06-10T09:37:09.771952Z DEBUG create_todo: Todo { id: 6, text: "test_6", completed: true }
+2025-06-10T09:37:09.771987Z  INFO 172.17.0.1:44034 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 99.606µs
+2025-06-10T09:37:09.806559Z DEBUG create_todo: Todo { id: 7, text: "test_7", completed: true }
+2025-06-10T09:37:09.806641Z  INFO 172.17.0.1:44046 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 119.479µs
+2025-06-10T09:37:09.840307Z DEBUG create_todo: Todo { id: 8, text: "test_8", completed: true }
+2025-06-10T09:37:09.840379Z  INFO 172.17.0.1:44060 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 115.091µs
+2025-06-10T09:37:09.874932Z DEBUG create_todo: Todo { id: 9, text: "test_9", completed: true }
+2025-06-10T09:37:09.875034Z  INFO 172.17.0.1:44068 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 250.51µs
+2025-06-10T09:37:09.906406Z DEBUG create_todo: Todo { id: 10, text: "test_10", completed: true }
+2025-06-10T09:37:09.906477Z  INFO 172.17.0.1:44082 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 115.231µs
+2025-06-10T09:37:09.931603Z DEBUG create_todo: Todo { id: 11, text: "test_11", completed: true }
+2025-06-10T09:37:09.931703Z  INFO 172.17.0.1:44096 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 150.462µs
+2025-06-10T09:37:09.963314Z DEBUG create_todo: Todo { id: 12, text: "test_12", completed: true }
+2025-06-10T09:37:09.963388Z  INFO 172.17.0.1:44100 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 146.817µs
+2025-06-10T09:37:09.998000Z DEBUG create_todo: Todo { id: 13, text: "test_13", completed: true }
+2025-06-10T09:37:09.998100Z  INFO 172.17.0.1:44110 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 173.558µs
+2025-06-10T09:37:10.031236Z DEBUG create_todo: Todo { id: 14, text: "test_14", completed: true }
+2025-06-10T09:37:10.031292Z  INFO 172.17.0.1:44122 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 122.263µs
+2025-06-10T09:37:10.092085Z DEBUG create_todo: Todo { id: 15, text: "test_15", completed: true }
+2025-06-10T09:37:10.092187Z  INFO 172.17.0.1:44124 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 149.545µs
+2025-06-10T09:37:10.126539Z DEBUG create_todo: Todo { id: 16, text: "test_16", completed: true }
+2025-06-10T09:37:10.126611Z  INFO 172.17.0.1:44138 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 120.586µs
+2025-06-10T09:37:10.148896Z DEBUG create_todo: Todo { id: 17, text: "test_17", completed: true }
+2025-06-10T09:37:10.149023Z  INFO 172.17.0.1:44152 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 196.009µs
+2025-06-10T09:37:10.175830Z DEBUG create_todo: Todo { id: 18, text: "test_18", completed: true }
+2025-06-10T09:37:10.175900Z  INFO 172.17.0.1:44160 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 144.939µs
+2025-06-10T09:37:10.207241Z DEBUG create_todo: Todo { id: 19, text: "test_19", completed: true }
+2025-06-10T09:37:10.207339Z  INFO 172.17.0.1:44176 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 148.625µs
+2025-06-10T09:37:10.232565Z DEBUG create_todo: Todo { id: 20, text: "test_20", completed: true }
+2025-06-10T09:37:10.232638Z  INFO 172.17.0.1:44192 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 118.073µs
+2025-06-10T09:37:10.259340Z DEBUG create_todo: Todo { id: 21, text: "test_21", completed: true }
+2025-06-10T09:37:10.259421Z  INFO 172.17.0.1:44198 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 119.758µs
+2025-06-10T09:37:10.289228Z DEBUG create_todo: Todo { id: 22, text: "test_22", completed: true }
+2025-06-10T09:37:10.289311Z  INFO 172.17.0.1:44206 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 204.602µs
+2025-06-10T09:37:10.309974Z DEBUG create_todo: Todo { id: 23, text: "test_23", completed: true }
+2025-06-10T09:37:10.310068Z  INFO 172.17.0.1:44218 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 128.332µs
+2025-06-10T09:37:10.328975Z DEBUG create_todo: Todo { id: 24, text: "test_24", completed: true }
+2025-06-10T09:37:10.329034Z  INFO 172.17.0.1:44234 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 128.678µs
+2025-06-10T09:37:10.355430Z DEBUG create_todo: Todo { id: 25, text: "test_25", completed: true }
+2025-06-10T09:37:10.355497Z  INFO 172.17.0.1:44248 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 110.301µs
+2025-06-10T09:37:10.379695Z DEBUG create_todo: Todo { id: 26, text: "test_26", completed: true }
+2025-06-10T09:37:10.379751Z  INFO 172.17.0.1:44260 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 96.937µs
+2025-06-10T09:37:10.411827Z DEBUG create_todo: Todo { id: 27, text: "test_27", completed: true }
+2025-06-10T09:37:10.411899Z  INFO 172.17.0.1:44276 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 112.193µs
+2025-06-10T09:37:10.440916Z DEBUG create_todo: Todo { id: 28, text: "test_28", completed: true }
+2025-06-10T09:37:10.441098Z  INFO 172.17.0.1:44290 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 203.913µs
+2025-06-10T09:37:10.471739Z DEBUG create_todo: Todo { id: 29, text: "test_29", completed: true }
+2025-06-10T09:37:10.471817Z  INFO 172.17.0.1:44294 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 122.885µs
+2025-06-10T09:37:10.502165Z DEBUG create_todo: Todo { id: 30, text: "test_30", completed: true }
+2025-06-10T09:37:10.502244Z  INFO 172.17.0.1:44308 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 171.556µs
+2025-06-10T09:37:10.526020Z DEBUG create_todo: Todo { id: 31, text: "test_31", completed: true }
+2025-06-10T09:37:10.526126Z  INFO 172.17.0.1:44320 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 148.507µs
+2025-06-10T09:37:10.545921Z DEBUG create_todo: Todo { id: 32, text: "test_32", completed: true }
+2025-06-10T09:37:10.546013Z  INFO 172.17.0.1:44326 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 129.647µs
+2025-06-10T09:37:10.609915Z DEBUG create_todo: Todo { id: 33, text: "test_33", completed: true }
+2025-06-10T09:37:10.609994Z  INFO 172.17.0.1:44334 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 141.006µs
+2025-06-10T09:37:10.634229Z DEBUG create_todo: Todo { id: 34, text: "test_34", completed: true }
+2025-06-10T09:37:10.634358Z  INFO 172.17.0.1:44344 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 215.395µs
+2025-06-10T09:37:10.659370Z DEBUG create_todo: Todo { id: 35, text: "test_35", completed: true }
+2025-06-10T09:37:10.659445Z  INFO 172.17.0.1:44350 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 122.239µs
+2025-06-10T09:37:10.683168Z DEBUG create_todo: Todo { id: 36, text: "test_36", completed: true }
+2025-06-10T09:37:10.683249Z  INFO 172.17.0.1:44364 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 141.164µs
+2025-06-10T09:37:10.719818Z DEBUG create_todo: Todo { id: 37, text: "test_37", completed: true }
+2025-06-10T09:37:10.719931Z  INFO 172.17.0.1:44376 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 215.823µs
+2025-06-10T09:37:10.740254Z DEBUG create_todo: Todo { id: 38, text: "test_38", completed: true }
+2025-06-10T09:37:10.740310Z  INFO 172.17.0.1:44378 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 94.107µs
+2025-06-10T09:37:10.757019Z DEBUG create_todo: Todo { id: 39, text: "test_39", completed: true }
+2025-06-10T09:37:10.757085Z  INFO 172.17.0.1:44380 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 107.418µs
+2025-06-10T09:37:10.778837Z DEBUG create_todo: Todo { id: 40, text: "test_40", completed: true }
+2025-06-10T09:37:10.778913Z  INFO 172.17.0.1:44392 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 173.224µs
+2025-06-10T09:37:10.796411Z DEBUG create_todo: Todo { id: 41, text: "test_41", completed: true }
+2025-06-10T09:37:10.796484Z  INFO 172.17.0.1:44394 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 104.903µs
+2025-06-10T09:37:10.820725Z DEBUG create_todo: Todo { id: 42, text: "test_42", completed: true }
+2025-06-10T09:37:10.820852Z  INFO 172.17.0.1:44398 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 215.508µs
+2025-06-10T09:37:10.836753Z DEBUG create_todo: Todo { id: 43, text: "test_43", completed: true }
+2025-06-10T09:37:10.836824Z  INFO 172.17.0.1:44408 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 132.583µs
+2025-06-10T09:37:10.859837Z DEBUG create_todo: Todo { id: 44, text: "test_44", completed: true }
+2025-06-10T09:37:10.859903Z  INFO 172.17.0.1:44414 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 103.798µs
+2025-06-10T09:37:10.884596Z DEBUG create_todo: Todo { id: 45, text: "test_45", completed: true }
+2025-06-10T09:37:10.884679Z  INFO 172.17.0.1:44420 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 132.44µs
+2025-06-10T09:37:10.910006Z DEBUG create_todo: Todo { id: 46, text: "test_46", completed: true }
+2025-06-10T09:37:10.910082Z  INFO 172.17.0.1:44434 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 136.208µs
+2025-06-10T09:37:10.933783Z DEBUG create_todo: Todo { id: 47, text: "test_47", completed: true }
+2025-06-10T09:37:10.933863Z  INFO 172.17.0.1:44444 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 121.998µs
+2025-06-10T09:37:10.957738Z DEBUG create_todo: Todo { id: 48, text: "test_48", completed: true }
+2025-06-10T09:37:10.957820Z  INFO 172.17.0.1:44448 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 129.027µs
+2025-06-10T09:37:10.978740Z DEBUG create_todo: Todo { id: 49, text: "test_49", completed: true }
+2025-06-10T09:37:10.978807Z  INFO 172.17.0.1:44462 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 140.21µs
+2025-06-10T09:37:10.999598Z DEBUG create_todo: Todo { id: 50, text: "test_50", completed: true }
+2025-06-10T09:37:10.999663Z  INFO 172.17.0.1:44476 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 102.548µs
+2025-06-10T09:37:11.022526Z DEBUG create_todo: Todo { id: 51, text: "test_51", completed: true }
+2025-06-10T09:37:11.022597Z  INFO 172.17.0.1:44482 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 120.415µs
+2025-06-10T09:37:11.043298Z DEBUG create_todo: Todo { id: 52, text: "test_52", completed: true }
+2025-06-10T09:37:11.043377Z  INFO 172.17.0.1:44490 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 127.871µs
+2025-06-10T09:37:11.061128Z DEBUG create_todo: Todo { id: 53, text: "test_53", completed: true }
+2025-06-10T09:37:11.061223Z  INFO 172.17.0.1:44506 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 139.186µs
+2025-06-10T09:37:11.082315Z DEBUG create_todo: Todo { id: 54, text: "test_54", completed: true }
+2025-06-10T09:37:11.082392Z  INFO 172.17.0.1:44518 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 245.83µs
+2025-06-10T09:37:11.102216Z DEBUG create_todo: Todo { id: 55, text: "test_55", completed: true }
+2025-06-10T09:37:11.102292Z  INFO 172.17.0.1:44530 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 113.37µs
+2025-06-10T09:37:11.122962Z DEBUG create_todo: Todo { id: 56, text: "test_56", completed: true }
+2025-06-10T09:37:11.123069Z  INFO 172.17.0.1:44536 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 153.075µs
+2025-06-10T09:37:11.146200Z DEBUG create_todo: Todo { id: 57, text: "test_57", completed: true }
+2025-06-10T09:37:11.146271Z  INFO 172.17.0.1:44538 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 222.42µs
+2025-06-10T09:37:11.165306Z DEBUG create_todo: Todo { id: 58, text: "test_58", completed: true }
+2025-06-10T09:37:11.165362Z  INFO 172.17.0.1:44552 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 94.354µs
+2025-06-10T09:37:11.182617Z DEBUG create_todo: Todo { id: 59, text: "test_59", completed: true }
+2025-06-10T09:37:11.182690Z  INFO 172.17.0.1:44560 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 114.491µs
+2025-06-10T09:37:11.202658Z DEBUG create_todo: Todo { id: 60, text: "test_60", completed: true }
+2025-06-10T09:37:11.202750Z  INFO 172.17.0.1:44566 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 147.966µs
+2025-06-10T09:37:11.219367Z DEBUG create_todo: Todo { id: 61, text: "test_61", completed: true }
+2025-06-10T09:37:11.219483Z  INFO 172.17.0.1:44582 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 194.031µs
+2025-06-10T09:37:11.239728Z DEBUG create_todo: Todo { id: 62, text: "test_62", completed: true }
+2025-06-10T09:37:11.239831Z  INFO 172.17.0.1:44594 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 157.613µs
+2025-06-10T09:37:11.261050Z DEBUG create_todo: Todo { id: 63, text: "test_63", completed: true }
+2025-06-10T09:37:11.261133Z  INFO 172.17.0.1:44604 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 120.272µs
+2025-06-10T09:37:11.285248Z DEBUG create_todo: Todo { id: 64, text: "test_64", completed: true }
+2025-06-10T09:37:11.285369Z  INFO 172.17.0.1:44612 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 175.2µs
+
+2025-06-10T09:37:11.307306Z DEBUG create_todo: Todo { id: 65, text: "test_65", completed: true }
+2025-06-10T09:37:11.307377Z  INFO 172.17.0.1:44614 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 113.108µs
+2025-06-10T09:37:11.328943Z DEBUG create_todo: Todo { id: 66, text: "test_66", completed: true }
+2025-06-10T09:37:11.329013Z  INFO 172.17.0.1:44622 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 107.495µs
+2025-06-10T09:37:11.351516Z DEBUG create_todo: Todo { id: 67, text: "test_67", completed: true }
+2025-06-10T09:37:11.351635Z  INFO 172.17.0.1:44632 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 168.001µs
+2025-06-10T09:37:11.369373Z DEBUG create_todo: Todo { id: 68, text: "test_68", completed: true }
+2025-06-10T09:37:11.369459Z  INFO 172.17.0.1:44640 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 204.845µs
+2025-06-10T09:37:11.385690Z DEBUG create_todo: Todo { id: 69, text: "test_69", completed: true }
+2025-06-10T09:37:11.385767Z  INFO 172.17.0.1:44648 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 120.641µs
+2025-06-10T09:37:11.402898Z DEBUG create_todo: Todo { id: 70, text: "test_70", completed: true }
+2025-06-10T09:37:11.402992Z  INFO 172.17.0.1:44662 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 133.421µs
+2025-06-10T09:37:11.421276Z DEBUG create_todo: Todo { id: 71, text: "test_71", completed: true }
+2025-06-10T09:37:11.421343Z  INFO 172.17.0.1:44668 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 132.28µs
+2025-06-10T09:37:11.438268Z DEBUG create_todo: Todo { id: 72, text: "test_72", completed: true }
+2025-06-10T09:37:11.438400Z  INFO 172.17.0.1:44672 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 187.404µs
+2025-06-10T09:37:11.455945Z DEBUG create_todo: Todo { id: 73, text: "test_73", completed: true }
+2025-06-10T09:37:11.456030Z  INFO 172.17.0.1:44686 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 240.51µs
+2025-06-10T09:37:11.475209Z DEBUG create_todo: Todo { id: 74, text: "test_74", completed: true }
+2025-06-10T09:37:11.475246Z  INFO 172.17.0.1:44688 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 80.806µs
+2025-06-10T09:37:11.496604Z DEBUG create_todo: Todo { id: 75, text: "test_75", completed: true }
+2025-06-10T09:37:11.496678Z  INFO 172.17.0.1:44692 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 121.858µs
+2025-06-10T09:37:11.515172Z DEBUG create_todo: Todo { id: 76, text: "test_76", completed: true }
+2025-06-10T09:37:11.515242Z  INFO 172.17.0.1:44702 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 115.752µs
+2025-06-10T09:37:11.532828Z DEBUG create_todo: Todo { id: 77, text: "test_77", completed: true }
+2025-06-10T09:37:11.532902Z  INFO 172.17.0.1:44714 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 108.486µs
+2025-06-10T09:37:11.551671Z DEBUG create_todo: Todo { id: 78, text: "test_78", completed: true }
+2025-06-10T09:37:11.551748Z  INFO 172.17.0.1:44726 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 161.08µs
+2025-06-10T09:37:11.566946Z DEBUG create_todo: Todo { id: 79, text: "test_79", completed: true }
+2025-06-10T09:37:11.567042Z  INFO 172.17.0.1:44740 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 142.532µs
+2025-06-10T09:37:11.588411Z DEBUG create_todo: Todo { id: 80, text: "test_80", completed: true }
+2025-06-10T09:37:11.588475Z  INFO 172.17.0.1:44756 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 100.218µs
+2025-06-10T09:37:11.606001Z DEBUG create_todo: Todo { id: 81, text: "test_81", completed: true }
+2025-06-10T09:37:11.606073Z  INFO 172.17.0.1:44772 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 142.091µs
+2025-06-10T09:37:11.627611Z DEBUG create_todo: Todo { id: 82, text: "test_82", completed: true }
+2025-06-10T09:37:11.627701Z  INFO 172.17.0.1:44782 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 146.314µs
+2025-06-10T09:37:11.649154Z DEBUG create_todo: Todo { id: 83, text: "test_83", completed: true }
+2025-06-10T09:37:11.649227Z  INFO 172.17.0.1:44798 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 164.67µs
+2025-06-10T09:37:11.677546Z DEBUG create_todo: Todo { id: 84, text: "test_84", completed: true }
+2025-06-10T09:37:11.677621Z  INFO 172.17.0.1:44808 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 120.2µs
+
+2025-06-10T09:37:11.700861Z DEBUG create_todo: Todo { id: 85, text: "test_85", completed: true }
+2025-06-10T09:37:11.700959Z  INFO 172.17.0.1:44816 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 155.039µs
+2025-06-10T09:37:11.725327Z DEBUG create_todo: Todo { id: 86, text: "test_86", completed: true }
+2025-06-10T09:37:11.725394Z  INFO 172.17.0.1:44830 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 151.487µs
+2025-06-10T09:37:11.743209Z DEBUG create_todo: Todo { id: 87, text: "test_87", completed: true }
+2025-06-10T09:37:11.743279Z  INFO 172.17.0.1:44846 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 100.934µs
+2025-06-10T09:37:11.757272Z DEBUG create_todo: Todo { id: 88, text: "test_88", completed: true }
+2025-06-10T09:37:11.757325Z  INFO 172.17.0.1:44856 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 76.676µs
+2025-06-10T09:37:11.771165Z DEBUG create_todo: Todo { id: 89, text: "test_89", completed: true }
+2025-06-10T09:37:11.771246Z  INFO 172.17.0.1:44872 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 128.946µs
+2025-06-10T09:37:11.792272Z DEBUG create_todo: Todo { id: 90, text: "test_90", completed: true }
+2025-06-10T09:37:11.792341Z  INFO 172.17.0.1:44880 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 107.712µs
+2025-06-10T09:37:11.879540Z DEBUG create_todo: Todo { id: 91, text: "test_91", completed: true }
+2025-06-10T09:37:11.879595Z  INFO 172.17.0.1:44894 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 80.615µs
+2025-06-10T09:37:11.899292Z DEBUG create_todo: Todo { id: 92, text: "test_92", completed: true }
+2025-06-10T09:37:11.899383Z  INFO 172.17.0.1:44904 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 148.853µs
+2025-06-10T09:37:11.925337Z DEBUG create_todo: Todo { id: 93, text: "test_93", completed: true }
+2025-06-10T09:37:11.925457Z  INFO 172.17.0.1:44906 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 167.9µs
+
+2025-06-10T09:37:11.948184Z DEBUG create_todo: Todo { id: 94, text: "test_94", completed: true }
+2025-06-10T09:37:11.948257Z  INFO 172.17.0.1:44914 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 123.724µs
+2025-06-10T09:37:11.973942Z DEBUG create_todo: Todo { id: 95, text: "test_95", completed: true }
+2025-06-10T09:37:11.974103Z  INFO 172.17.0.1:44922 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 350.281µs
+2025-06-10T09:37:11.997324Z DEBUG create_todo: Todo { id: 96, text: "test_96", completed: true }
+2025-06-10T09:37:11.997436Z  INFO 172.17.0.1:44938 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 178.314µs
+2025-06-10T09:37:12.015305Z DEBUG create_todo: Todo { id: 97, text: "test_97", completed: true }
+2025-06-10T09:37:12.015377Z  INFO 172.17.0.1:44946 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 113.274µs
+2025-06-10T09:37:12.032301Z DEBUG create_todo: Todo { id: 98, text: "test_98", completed: true }
+2025-06-10T09:37:12.032375Z  INFO 172.17.0.1:44956 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 108.744µs
+2025-06-10T09:37:12.049404Z DEBUG create_todo: Todo { id: 99, text: "test_99", completed: true }
+2025-06-10T09:37:12.049476Z  INFO 172.17.0.1:44968 "POST /todos HTTP/1.1" 201 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 113.095µs
+2025-06-10T09:37:12.191597Z DEBUG delete_todo: id=0
+2025-06-10T09:37:12.191860Z  INFO 172.17.0.1:44984 "DELETE /todos/0 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 331.421µs
+2025-06-10T09:37:12.216148Z DEBUG delete_todo: id=1
+2025-06-10T09:37:12.216227Z  INFO 172.17.0.1:44992 "DELETE /todos/1 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 117.989µs
+2025-06-10T09:37:12.237134Z DEBUG delete_todo: id=2
+2025-06-10T09:37:12.237269Z  INFO 172.17.0.1:44994 "DELETE /todos/2 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 224.128µs
+2025-06-10T09:37:12.252895Z DEBUG delete_todo: id=3
+2025-06-10T09:37:12.253004Z  INFO 172.17.0.1:44998 "DELETE /todos/3 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 151.185µs
+2025-06-10T09:37:12.269060Z DEBUG delete_todo: id=4
+2025-06-10T09:37:12.269169Z  INFO 172.17.0.1:45002 "DELETE /todos/4 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 169.541µs
+2025-06-10T09:37:12.282083Z DEBUG delete_todo: id=5
+2025-06-10T09:37:12.282109Z  INFO 172.17.0.1:45018 "DELETE /todos/5 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 60.677µs
+2025-06-10T09:37:12.298522Z DEBUG delete_todo: id=6
+2025-06-10T09:37:12.298590Z  INFO 172.17.0.1:45024 "DELETE /todos/6 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 97.78µs
+2025-06-10T09:37:12.323253Z DEBUG delete_todo: id=7
+2025-06-10T09:37:12.323460Z  INFO 172.17.0.1:45036 "DELETE /todos/7 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 197.364µs
+2025-06-10T09:37:12.347435Z DEBUG delete_todo: id=8
+2025-06-10T09:37:12.347508Z  INFO 172.17.0.1:45046 "DELETE /todos/8 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 111.667µs
+2025-06-10T09:37:12.378594Z DEBUG delete_todo: id=9
+2025-06-10T09:37:12.378667Z  INFO 172.17.0.1:45060 "DELETE /todos/9 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 103.544µs
+2025-06-10T09:37:12.404904Z DEBUG delete_todo: id=10
+2025-06-10T09:37:12.405068Z  INFO 172.17.0.1:45064 "DELETE /todos/10 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 216.589µs
+2025-06-10T09:37:12.442775Z DEBUG delete_todo: id=11
+2025-06-10T09:37:12.442868Z  INFO 172.17.0.1:45078 "DELETE /todos/11 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 141.326µs
+2025-06-10T09:37:12.482182Z DEBUG delete_todo: id=12
+2025-06-10T09:37:12.482282Z  INFO 172.17.0.1:45088 "DELETE /todos/12 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 126.164µs
+2025-06-10T09:37:12.508836Z DEBUG delete_todo: id=13
+2025-06-10T09:37:12.508906Z  INFO 172.17.0.1:45092 "DELETE /todos/13 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 105.77µs
+2025-06-10T09:37:12.533356Z DEBUG delete_todo: id=14
+2025-06-10T09:37:12.533432Z  INFO 172.17.0.1:45104 "DELETE /todos/14 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 111.978µs
+2025-06-10T09:37:12.558381Z DEBUG delete_todo: id=15
+2025-06-10T09:37:12.558446Z  INFO 172.17.0.1:45108 "DELETE /todos/15 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 106.543µs
+2025-06-10T09:37:12.655875Z DEBUG delete_todo: id=16
+2025-06-10T09:37:12.656271Z  INFO 172.17.0.1:45110 "DELETE /todos/16 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 345.756µs
+2025-06-10T09:37:12.689652Z DEBUG delete_todo: id=17
+2025-06-10T09:37:12.689732Z  INFO 172.17.0.1:45116 "DELETE /todos/17 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 115.5µs
+2025-06-10T09:37:12.714314Z DEBUG delete_todo: id=18
+2025-06-10T09:37:12.714436Z  INFO 172.17.0.1:45118 "DELETE /todos/18 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 133.69µs
+2025-06-10T09:37:12.743666Z DEBUG delete_todo: id=19
+2025-06-10T09:37:12.743776Z  INFO 172.17.0.1:45130 "DELETE /todos/19 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 193.482µs
+2025-06-10T09:37:12.770802Z DEBUG delete_todo: id=20
+2025-06-10T09:37:12.770896Z  INFO 172.17.0.1:45136 "DELETE /todos/20 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 167.835µs
+2025-06-10T09:37:12.811624Z DEBUG delete_todo: id=21
+2025-06-10T09:37:12.811696Z  INFO 172.17.0.1:45150 "DELETE /todos/21 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 108.824µs
+2025-06-10T09:37:12.843246Z DEBUG delete_todo: id=22
+2025-06-10T09:37:12.843310Z  INFO 172.17.0.1:45162 "DELETE /todos/22 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 119.361µs
+2025-06-10T09:37:12.862132Z DEBUG delete_todo: id=23
+2025-06-10T09:37:12.862201Z  INFO 172.17.0.1:45176 "DELETE /todos/23 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 100.363µs
+2025-06-10T09:37:12.899534Z DEBUG delete_todo: id=24
+2025-06-10T09:37:12.899602Z  INFO 172.17.0.1:45182 "DELETE /todos/24 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 111.56µs
+2025-06-10T09:37:12.929671Z DEBUG delete_todo: id=25
+2025-06-10T09:37:12.929745Z  INFO 172.17.0.1:45184 "DELETE /todos/25 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 141.295µs
+2025-06-10T09:37:12.983142Z DEBUG delete_todo: id=26
+2025-06-10T09:37:12.983215Z  INFO 172.17.0.1:45186 "DELETE /todos/26 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 114.125µs
+2025-06-10T09:37:13.015087Z DEBUG delete_todo: id=27
+2025-06-10T09:37:13.015152Z  INFO 172.17.0.1:45198 "DELETE /todos/27 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 101.748µs
+2025-06-10T09:37:13.035904Z DEBUG delete_todo: id=28
+2025-06-10T09:37:13.036007Z  INFO 172.17.0.1:45202 "DELETE /todos/28 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 174.16µs
+2025-06-10T09:37:13.054492Z DEBUG delete_todo: id=29
+2025-06-10T09:37:13.054567Z  INFO 172.17.0.1:45218 "DELETE /todos/29 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 167.872µs
+2025-06-10T09:37:13.072040Z DEBUG delete_todo: id=30
+2025-06-10T09:37:13.072107Z  INFO 172.17.0.1:45220 "DELETE /todos/30 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 131.732µs
+2025-06-10T09:37:13.104495Z DEBUG delete_todo: id=31
+2025-06-10T09:37:13.104593Z  INFO 172.17.0.1:45234 "DELETE /todos/31 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 147.23µs
+2025-06-10T09:37:13.141455Z DEBUG delete_todo: id=32
+2025-06-10T09:37:13.141529Z  INFO 172.17.0.1:45250 "DELETE /todos/32 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 106.291µs
+2025-06-10T09:37:13.170125Z DEBUG delete_todo: id=33
+2025-06-10T09:37:13.170317Z  INFO 172.17.0.1:45262 "DELETE /todos/33 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 325.026µs
+2025-06-10T09:37:13.209652Z DEBUG delete_todo: id=34
+2025-06-10T09:37:13.209715Z  INFO 172.17.0.1:45264 "DELETE /todos/34 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 91.961µs
+2025-06-10T09:37:13.232081Z DEBUG delete_todo: id=35
+2025-06-10T09:37:13.232152Z  INFO 172.17.0.1:45276 "DELETE /todos/35 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 109.125µs
+2025-06-10T09:37:13.259963Z DEBUG delete_todo: id=36
+2025-06-10T09:37:13.260040Z  INFO 172.17.0.1:45286 "DELETE /todos/36 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 120.185µs
+2025-06-10T09:37:13.282042Z DEBUG delete_todo: id=37
+2025-06-10T09:37:13.282110Z  INFO 172.17.0.1:45290 "DELETE /todos/37 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 130.193µs
+2025-06-10T09:37:13.302950Z DEBUG delete_todo: id=38
+2025-06-10T09:37:13.303080Z  INFO 172.17.0.1:45306 "DELETE /todos/38 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 176.068µs
+2025-06-10T09:37:13.331975Z DEBUG delete_todo: id=39
+2025-06-10T09:37:13.332032Z  INFO 172.17.0.1:45322 "DELETE /todos/39 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 90.868µs
+2025-06-10T09:37:13.428709Z DEBUG delete_todo: id=40
+2025-06-10T09:37:13.428778Z  INFO 172.17.0.1:45324 "DELETE /todos/40 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 118.21µs
+2025-06-10T09:37:13.447748Z DEBUG delete_todo: id=41
+2025-06-10T09:37:13.447821Z  INFO 172.17.0.1:45334 "DELETE /todos/41 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 104.676µs
+2025-06-10T09:37:13.472514Z DEBUG delete_todo: id=42
+2025-06-10T09:37:13.472573Z  INFO 172.17.0.1:45338 "DELETE /todos/42 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 92.052µs
+2025-06-10T09:37:13.489398Z DEBUG delete_todo: id=43
+2025-06-10T09:37:13.489465Z  INFO 172.17.0.1:45342 "DELETE /todos/43 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 105.894µs
+2025-06-10T09:37:13.513550Z DEBUG delete_todo: id=44
+2025-06-10T09:37:13.513618Z  INFO 172.17.0.1:45344 "DELETE /todos/44 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 105.809µs
+2025-06-10T09:37:13.548054Z DEBUG delete_todo: id=45
+2025-06-10T09:37:13.548151Z  INFO 172.17.0.1:45358 "DELETE /todos/45 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 124.364µs
+2025-06-10T09:37:13.572454Z DEBUG delete_todo: id=46
+2025-06-10T09:37:13.572527Z  INFO 172.17.0.1:45362 "DELETE /todos/46 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 106.276µs
+2025-06-10T09:37:13.598310Z DEBUG delete_todo: id=47
+2025-06-10T09:37:13.598370Z  INFO 172.17.0.1:45370 "DELETE /todos/47 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 90.952µs
+2025-06-10T09:37:13.634921Z DEBUG delete_todo: id=48
+2025-06-10T09:37:13.635031Z  INFO 172.17.0.1:45382 "DELETE /todos/48 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 148.341µs
+2025-06-10T09:37:13.653648Z DEBUG delete_todo: id=49
+2025-06-10T09:37:13.653720Z  INFO 172.17.0.1:45396 "DELETE /todos/49 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 120.4µs
+2025-06-10T09:37:13.688575Z DEBUG delete_todo: id=50
+2025-06-10T09:37:13.688683Z  INFO 172.17.0.1:45400 "DELETE /todos/50 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 150.37µs
+2025-06-10T09:37:13.715601Z DEBUG delete_todo: id=51
+2025-06-10T09:37:13.715673Z  INFO 172.17.0.1:45402 "DELETE /todos/51 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 104.53µs
+2025-06-10T09:37:13.750137Z DEBUG delete_todo: id=52
+2025-06-10T09:37:13.750212Z  INFO 172.17.0.1:45412 "DELETE /todos/52 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 156.35µs
+2025-06-10T09:37:13.773369Z DEBUG delete_todo: id=53
+2025-06-10T09:37:13.773446Z  INFO 172.17.0.1:45418 "DELETE /todos/53 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 116.679µs
+2025-06-10T09:37:13.810321Z DEBUG delete_todo: id=54
+2025-06-10T09:37:13.810386Z  INFO 172.17.0.1:45432 "DELETE /todos/54 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 101.042µs
+2025-06-10T09:37:13.840642Z DEBUG delete_todo: id=55
+2025-06-10T09:37:13.840701Z  INFO 172.17.0.1:45434 "DELETE /todos/55 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 94.148µs
+2025-06-10T09:37:13.878765Z DEBUG delete_todo: id=56
+2025-06-10T09:37:13.878837Z  INFO 172.17.0.1:45450 "DELETE /todos/56 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 108.992µs
+2025-06-10T09:37:13.940492Z DEBUG delete_todo: id=57
+2025-06-10T09:37:13.940565Z  INFO 172.17.0.1:45454 "DELETE /todos/57 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 116.634µs
+2025-06-10T09:37:13.970787Z DEBUG delete_todo: id=58
+2025-06-10T09:37:13.970838Z  INFO 172.17.0.1:45460 "DELETE /todos/58 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 85.504µs
+2025-06-10T09:37:14.005280Z DEBUG delete_todo: id=59
+2025-06-10T09:37:14.005350Z  INFO 172.17.0.1:45468 "DELETE /todos/59 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 110.403µs
+2025-06-10T09:37:14.037842Z DEBUG delete_todo: id=60
+2025-06-10T09:37:14.037930Z  INFO 172.17.0.1:45480 "DELETE /todos/60 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 138.661µs
+2025-06-10T09:37:14.060257Z DEBUG delete_todo: id=61
+2025-06-10T09:37:14.060323Z  INFO 172.17.0.1:45484 "DELETE /todos/61 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 104.501µs
+2025-06-10T09:37:14.077367Z DEBUG delete_todo: id=62
+2025-06-10T09:37:14.077468Z  INFO 172.17.0.1:45490 "DELETE /todos/62 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 135.204µs
+2025-06-10T09:37:14.094547Z DEBUG delete_todo: id=63
+2025-06-10T09:37:14.094609Z  INFO 172.17.0.1:45496 "DELETE /todos/63 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 337.172µs
+2025-06-10T09:37:14.113888Z DEBUG delete_todo: id=64
+2025-06-10T09:37:14.113957Z  INFO 172.17.0.1:45504 "DELETE /todos/64 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 106.972µs
+2025-06-10T09:37:14.131480Z DEBUG delete_todo: id=65
+2025-06-10T09:37:14.131544Z  INFO 172.17.0.1:45508 "DELETE /todos/65 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 150.466µs
+2025-06-10T09:37:14.148204Z DEBUG delete_todo: id=66
+2025-06-10T09:37:14.148278Z  INFO 172.17.0.1:45518 "DELETE /todos/66 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 111.628µs
+2025-06-10T09:37:14.164587Z DEBUG delete_todo: id=67
+2025-06-10T09:37:14.164656Z  INFO 172.17.0.1:45528 "DELETE /todos/67 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 105.002µs
+2025-06-10T09:37:14.179593Z DEBUG delete_todo: id=68
+2025-06-10T09:37:14.179661Z  INFO 172.17.0.1:45532 "DELETE /todos/68 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 99.664µs
+2025-06-10T09:37:14.194399Z DEBUG delete_todo: id=69
+2025-06-10T09:37:14.194465Z  INFO 172.17.0.1:41870 "DELETE /todos/69 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 90.249µs
+2025-06-10T09:37:14.210485Z DEBUG delete_todo: id=70
+2025-06-10T09:37:14.210558Z  INFO 172.17.0.1:41886 "DELETE /todos/70 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 104.831µs
+2025-06-10T09:37:14.225257Z DEBUG delete_todo: id=71
+2025-06-10T09:37:14.225319Z  INFO 172.17.0.1:41898 "DELETE /todos/71 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 94.146µs
+2025-06-10T09:37:14.240090Z DEBUG delete_todo: id=72
+2025-06-10T09:37:14.240157Z  INFO 172.17.0.1:41910 "DELETE /todos/72 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 93.944µs
+2025-06-10T09:37:14.254359Z DEBUG delete_todo: id=73
+2025-06-10T09:37:14.254436Z  INFO 172.17.0.1:41914 "DELETE /todos/73 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 109.3µs
+2025-06-10T09:37:14.266634Z DEBUG delete_todo: id=74
+2025-06-10T09:37:14.266703Z  INFO 172.17.0.1:41924 "DELETE /todos/74 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 104.475µs
+2025-06-10T09:37:14.280145Z DEBUG delete_todo: id=75
+2025-06-10T09:37:14.280180Z  INFO 172.17.0.1:41936 "DELETE /todos/75 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 152.706µs
+2025-06-10T09:37:14.294282Z DEBUG delete_todo: id=76
+2025-06-10T09:37:14.294333Z  INFO 172.17.0.1:41948 "DELETE /todos/76 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 86.278µs
+2025-06-10T09:37:14.310119Z DEBUG delete_todo: id=77
+2025-06-10T09:37:14.310188Z  INFO 172.17.0.1:41952 "DELETE /todos/77 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 109.606µs
+2025-06-10T09:37:14.332472Z DEBUG delete_todo: id=78
+2025-06-10T09:37:14.332542Z  INFO 172.17.0.1:41966 "DELETE /todos/78 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 110.587µs
+2025-06-10T09:37:14.349168Z DEBUG delete_todo: id=79
+2025-06-10T09:37:14.349234Z  INFO 172.17.0.1:41972 "DELETE /todos/79 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 99.62µs
+2025-06-10T09:37:14.370543Z DEBUG delete_todo: id=80
+2025-06-10T09:37:14.370617Z  INFO 172.17.0.1:41980 "DELETE /todos/80 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 115.624µs
+2025-06-10T09:37:14.390313Z DEBUG delete_todo: id=81
+2025-06-10T09:37:14.390379Z  INFO 172.17.0.1:41982 "DELETE /todos/81 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 249.695µs
+2025-06-10T09:37:14.405213Z DEBUG delete_todo: id=82
+2025-06-10T09:37:14.405282Z  INFO 172.17.0.1:41990 "DELETE /todos/82 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 104.242µs
+2025-06-10T09:37:14.420081Z DEBUG delete_todo: id=83
+2025-06-10T09:37:14.420147Z  INFO 172.17.0.1:41994 "DELETE /todos/83 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 97.764µs
+2025-06-10T09:37:14.431226Z DEBUG delete_todo: id=84
+2025-06-10T09:37:14.431288Z  INFO 172.17.0.1:42006 "DELETE /todos/84 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 89.304µs
+2025-06-10T09:37:14.442582Z DEBUG delete_todo: id=85
+2025-06-10T09:37:14.442645Z  INFO 172.17.0.1:42008 "DELETE /todos/85 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 96.369µs
+2025-06-10T09:37:14.454345Z DEBUG delete_todo: id=86
+2025-06-10T09:37:14.454411Z  INFO 172.17.0.1:42024 "DELETE /todos/86 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 95.359µs
+2025-06-10T09:37:14.465129Z DEBUG delete_todo: id=87
+2025-06-10T09:37:14.465195Z  INFO 172.17.0.1:42040 "DELETE /todos/87 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 102.427µs
+2025-06-10T09:37:14.476579Z DEBUG delete_todo: id=88
+2025-06-10T09:37:14.476646Z  INFO 172.17.0.1:42046 "DELETE /todos/88 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 101.755µs
+2025-06-10T09:37:14.489173Z DEBUG delete_todo: id=89
+2025-06-10T09:37:14.489232Z  INFO 172.17.0.1:42050 "DELETE /todos/89 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 90.822µs
+2025-06-10T09:37:14.500686Z DEBUG delete_todo: id=90
+2025-06-10T09:37:14.500819Z  INFO 172.17.0.1:42052 "DELETE /todos/90 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 320.159µs
+2025-06-10T09:37:14.512707Z DEBUG delete_todo: id=91
+2025-06-10T09:37:14.512787Z  INFO 172.17.0.1:42058 "DELETE /todos/91 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 94.472µs
+2025-06-10T09:37:14.526028Z DEBUG delete_todo: id=92
+2025-06-10T09:37:14.526081Z  INFO 172.17.0.1:42072 "DELETE /todos/92 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 86.9µs
+2025-06-10T09:37:14.537852Z DEBUG delete_todo: id=93
+2025-06-10T09:37:14.537934Z  INFO 172.17.0.1:42076 "DELETE /todos/93 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 117.489µs
+2025-06-10T09:37:14.550026Z DEBUG delete_todo: id=94
+2025-06-10T09:37:14.550162Z  INFO 172.17.0.1:42086 "DELETE /todos/94 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 204.829µs
+2025-06-10T09:37:14.561164Z DEBUG delete_todo: id=95
+2025-06-10T09:37:14.561221Z  INFO 172.17.0.1:42094 "DELETE /todos/95 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 155.497µs
+2025-06-10T09:37:14.575591Z DEBUG delete_todo: id=96
+2025-06-10T09:37:14.575670Z  INFO 172.17.0.1:42108 "DELETE /todos/96 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 119.691µs
+2025-06-10T09:37:14.589905Z DEBUG delete_todo: id=97
+2025-06-10T09:37:14.589963Z  INFO 172.17.0.1:42120 "DELETE /todos/97 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 91.16µs
+2025-06-10T09:37:14.602172Z DEBUG delete_todo: id=98
+2025-06-10T09:37:14.602255Z  INFO 172.17.0.1:42134 "DELETE /todos/98 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 154.292µs
+2025-06-10T09:37:14.612507Z DEBUG delete_todo: id=99
+2025-06-10T09:37:14.612556Z  INFO 172.17.0.1:42150 "DELETE /todos/99 HTTP/1.1" 204 "-" "Apache-HttpClient/4.5.13 (Java/17.0.2)" 81.623µs

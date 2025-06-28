@@ -19,11 +19,6 @@ public class TestDataGenerator {
 
                 Class<?> type = field.getType();
 
-//                public static String getString(int length) {
-//                    return TEST_PREFIX + RandomStringUtils
-//                            .randomAlphabetic(Math.max(length - TEST_PREFIX.length(), MAX_LENGTH));
-//                }
-
                 if (type == String.class) {
                     field.set(instance, TEST_PREFIX + RandomStringUtils.randomAlphabetic(MAX_LENGTH));
                 } else if (type == long.class || type == Long.class) {
@@ -40,5 +35,14 @@ public class TestDataGenerator {
         } catch (Exception e) {
             throw new RuntimeException("Failed to generate test data", e);
         }
+    }
+
+    public static String generateString(int length) {
+        return TEST_PREFIX + RandomStringUtils
+                .randomAlphabetic(Math.max(length - TEST_PREFIX.length(), MAX_LENGTH));
+    }
+
+    public static long generateNumber(long length) {
+        return random.nextLong(length);
     }
 }

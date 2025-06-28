@@ -2,11 +2,11 @@
 GET localhost:8082/todos
 Content-Type: application/json
 
-#### GET request one element: not implemented
+### GET request one element: not implemented
 #GET localhost:8082/todos/1
 #Content-Type: application/json
 
-### POST request
+### POST request ###  "text": "first post",
 POST localhost:8082/todos
 Content-Type: application/json
 
