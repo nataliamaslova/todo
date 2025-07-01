@@ -1,3 +1,5 @@
+package api;
+
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
 
