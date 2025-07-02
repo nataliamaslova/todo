@@ -17,6 +17,9 @@ runs:
       shell: bash
       run: docker pull nataliamaslova/todo-app:latest
 
-    - name: Run Todo Server
+    - name: Run todo-app container
       shell: bash
-      run: docker run -p 8080:4242 --name todo-app nataliamaslova/todo-app:latest -e VERBOSE=1 todo-app
+      run: docker run -p 8080:4242 --name todo-app nataliamaslova/todo-app:latest # -e VERBOSE=1 todo-app
+
+    - name: Wait for app start
+      run: sleep 5
