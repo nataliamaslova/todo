@@ -3,16 +3,11 @@ name: Todo Setup
 runs:
   using: composite
   steps:
-#    - name: Set up JDK
-#      uses: actions/setup-java@v4
-#      with:
-#        java-version: '17'
-#        distribution: 'zulu'
-#
     - name: Setup maven wrapper
       shell: bash
       run: chmod +x mvnw
-#
+
+#   Unnecessary step
 #    - name: Pull todo-app image
 #      shell: bash
 #      run: docker pull nataliamaslova/todo-app:latest
@@ -21,6 +16,6 @@ runs:
       shell: bash
       run: docker run -d -p 8082:4242 --name todo-app nataliamaslova/todo-app:latest # -e VERBOSE=1 todo-app
 
-    - name: Wait for app start
-      shell: bash
-      run: sleep 5
+#    - name: Wait for app start
+#      shell: bash
+#      run: sleep 5
