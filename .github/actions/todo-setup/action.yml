@@ -1,7 +1,7 @@
 name: Todo Setup
 
 runs:
-#  using: composite
+  using: composite
   steps:
 #    - name: Set up JDK
 #      uses: actions/setup-java@v4
