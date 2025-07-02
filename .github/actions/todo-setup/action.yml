@@ -9,9 +9,9 @@ runs:
 #        java-version: '17'
 #        distribution: 'zulu'
 #
-#    - name: Setup maven wrapper
-#      shell: bash
-#      run: chmod +x mvnw
+    - name: Setup maven wrapper
+      shell: bash
+      run: chmod +x mvnw
 #
 #    - name: Pull todo-app image
 #      shell: bash
