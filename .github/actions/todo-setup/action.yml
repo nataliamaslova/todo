@@ -1,21 +1,21 @@
 name: Todo Setup
 
 runs:
-  using: composite
+#  using: composite
   steps:
-    - name: Set up JDK
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'zulu'
-
-    - name: Setup maven wrapper
-      shell: bash
-      run: chmod +x mvnw
-
-    - name: Pull todo-app image
-      shell: bash
-      run: docker pull nataliamaslova/todo-app:latest
+#    - name: Set up JDK
+#      uses: actions/setup-java@v4
+#      with:
+#        java-version: '17'
+#        distribution: 'zulu'
+#
+#    - name: Setup maven wrapper
+#      shell: bash
+#      run: chmod +x mvnw
+#
+#    - name: Pull todo-app image
+#      shell: bash
+#      run: docker pull nataliamaslova/todo-app:latest
 
     - name: Run Todo Server
       shell: bash
