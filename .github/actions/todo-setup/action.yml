@@ -19,4 +19,4 @@ runs:
 
     - name: Run Todo Server
       shell: bash
-      run: docker run -p 8080:4242 -e VERBOSE=1 todo-app
+      run: docker run -p 8080:4242 --name todo-app nataliamaslova/todo-app:latest -e VERBOSE=1 todo-app
