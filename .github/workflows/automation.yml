@@ -14,6 +14,7 @@ jobs:
           distribution: 'zulu'
 
       - name: Setup maven wrapper
+        shell: bash
         run: chmod +x mvnw
 
       - name: Validate Checkstyle
@@ -24,6 +25,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup maven wrapper
+        shell: bash
+        run: chmod +x mvnw
 
       - name: Todo Setup
         uses: ./.github/actions/todo-setup

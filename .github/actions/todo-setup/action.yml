@@ -3,9 +3,9 @@ name: Todo Setup
 runs:
   using: composite
   steps:
-    - name: Setup maven wrapper
-      shell: bash
-      run: chmod +x mvnw
+#    - name: Setup maven wrapper
+#      shell: bash
+#      run: chmod +x mvnw
 
 #   Unnecessary step
 #    - name: Pull todo-app image
