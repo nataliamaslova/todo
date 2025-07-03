@@ -1,4 +1,4 @@
-name: TeamCity deployment
+name: Todo deployment
 
 on: push
 
@@ -11,3 +11,16 @@ jobs:
   automation-api:
     needs: backend
     uses: ./.github/workflows/automation.yml
+
+  manual-prod-approval:
+    needs: automation-api
+    runs-on: ubuntu-latest
+    environment: 'prod'
+    steps:
+      - name: Approve backend to production
+        run: echo Approved to production
+
+  # Деплой бекэнда на прод
+  deploy-prod:
+    needs: manual-prod-approval
+    uses: ./.github/workflows/deploy-prod.yml

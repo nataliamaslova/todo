@@ -1,0 +1,11 @@
+name: Deploy to prod
+
+on: workflow_call
+
+# Это лишь примерные степы, как может выглядеть деплой на прод
+jobs:
+  deploy-stage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy backend to prod
+        run: echo Происходит деплой бекенда
