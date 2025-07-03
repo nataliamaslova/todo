@@ -9,5 +9,5 @@ jobs:
 
   # Прогоняются API тесты
   automation-api:
-    needs: [ backend ]
+    needs: backend
     uses: ./.github/workflows/automation.yml
