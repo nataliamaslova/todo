@@ -39,8 +39,8 @@ jobs:
         run: ./mvnw test
 
       - name: Send Telegram notification if tests failed
-        if: failure()
         shell: bash
+        if: steps.test-step.outcome == 'failure'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
