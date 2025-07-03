@@ -38,6 +38,11 @@ jobs:
         continue-on-error: true
         run: ./mvnw test
 
+      - name: Debug secrets
+        run: |
+          echo "Token length: ${#TELEGRAM_BOT_TOKEN}"
+          echo "Chat ID: ${TELEGRAM_CHAT_ID}"
+
       - name: Send Telegram notification if tests failed
         shell: bash
         if: steps.test-step.outcome == 'failure'
