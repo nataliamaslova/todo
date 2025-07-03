@@ -3,17 +3,6 @@ name: Todo Setup
 runs:
   using: composite
   steps:
-
-#   Unnecessary step
-#    - name: Pull todo-app image
-#      shell: bash
-#      run: docker pull nataliamaslova/todo-app:latest
-
     - name: Run todo-app container
       shell: bash
       run: docker run -d -p 8082:4242 --name todo-app nataliamaslova/todo-app:latest # -e VERBOSE=1 todo-app
-
-#   Unnecessary step
-#    - name: Wait for app start
-#      shell: bash
-#      run: sleep 5
