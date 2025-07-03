@@ -34,16 +34,17 @@ jobs:
         uses: ./.github/actions/todo-setup
 
       - name: Run tests
+        id: test-step
         continue-on-error: true
         run: ./mvnw test
 
       - name: Send Telegram notification if tests failed
-        if: failure()
+        if: steps.test-step.outcome == 'failure'
         run: |
-            curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
-              -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
-              -d text="Tests failed *${{ github.repository }}* in branch *${{ github.ref_name }}*. Verify pipeline: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
-              -d parse_mode=Markdown
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+            -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+            -d text="❌ Tests failed in *${{ github.repository }}* on branch *${{ github.ref_name }}*. Check: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            -d parse_mode=Markdown
 
       # Загружаем историю Allure Report из специальной ветки gh-pages (https://allurereport.org/docs/integrations-github/)
       - name: Load test report history
