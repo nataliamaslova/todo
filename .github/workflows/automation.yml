@@ -36,6 +36,9 @@ jobs:
       - name: Run tests
         run: ./mvnw test
 
+      - name: Dump environment
+        run: printenv
+
       - name: Send Telegram notification if tests failed
         if: failure()
         env:
