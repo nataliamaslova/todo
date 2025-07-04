@@ -11,6 +11,9 @@ jobs:
   automation-api:
     needs: backend
     uses: ./.github/workflows/automation.yml
+    with:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
   manual-prod-approval:
     needs: automation-api
