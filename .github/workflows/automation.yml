@@ -1,0 +1,87 @@
+name: Run tests
+on:
+  workflow_call:
+    secrets:
+      TELEGRAM_BOT_TOKEN:
+        required: true
+      TELEGRAM_CHAT_ID:
+        required: true
+
+
+jobs:
+  validate-checkstyle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'zulu'
+
+      - name: Setup maven wrapper
+        shell: bash
+        run: chmod +x mvnw
+
+      - name: Validate Checkstyle
+        run: ./mvnw validate
+
+  run-tests:
+    needs: validate-checkstyle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup maven wrapper
+        shell: bash
+        run: chmod +x mvnw
+
+      - name: Todo Setup
+        uses: ./.github/actions/todo-setup
+
+      - name: Run tests
+        id: test-step
+        continue-on-error: true
+        run: ./mvnw test
+
+      - name: Dump secrets
+        run: |
+          echo "${{ secrets.TELEGRAM_BOT_TOKEN }}" | sed 's/./*/g'
+          echo "${{ secrets.TELEGRAM_CHAT_ID }}" | sed 's/./*/g'
+
+      - name: Send Telegram notification if tests failed
+        if: steps.test-step.outcome == 'failure'
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+            -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+            -d text="Tests failed in *${{ github.repository }}* on branch *${{ github.ref_name }}*. Check: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            -d parse_mode=Markdown  
+
+
+      # Загружаем историю Allure Report из специальной ветки gh-pages (https://allurereport.org/docs/integrations-github/)
+      - name: Load test report history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Build test report
+        uses: simple-elf/allure-report-action@v1.7
+        if: always()
+        with:
+          gh_pages: gh-pages
+          allure_history: allure-history
+          allure_results: target/allure-results
+
+      # Создаем пустую ветку gh-pages на основе инструкции https://gist.github.com/ramnathv/2227408
+      - name: Publish test report
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history
+

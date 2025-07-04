@@ -1,0 +1,8 @@
+name: Todo Setup
+
+runs:
+  using: composite
+  steps:
+    - name: Run todo-app container
+      shell: bash
+      run: docker run -d -p 8082:4242 --name todo-app nataliamaslova/todo-app:latest # -e VERBOSE=1 todo-app

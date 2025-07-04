@@ -5,7 +5,7 @@ docker run -p 8082:4242 -e VERBOSE=1 todo-app.
 
 The task includes two parts:
 
-Firstly, it's required to write some tests for checking the functionality of the application. We don't provide strict specifications because the domain is simple enough. Therefore, it is necessary to come up with cases by yourself.
+Firstly, it's required to write some api for checking the functionality of the application. We don't provide strict specifications because the domain is simple enough. Therefore, it is necessary to come up with cases by yourself.
 For each route, implement a maximum of 5 test cases. Any additional test cases should be provided as a checklist for future implementation.
 
 Secondly, it's necessary to check the performance of the POST /todos endpoint. It's not required to draw graphs. Measurements and some summary are enough.
@@ -40,34 +40,31 @@ The endpoint requires the Authorization request header containing the admin:admi
 
 ## Summary
 
-### 0. Почему нет ответа на POST/PUT?
-Response body is empty
-
 ### 1. Functional testing
-Implemented 20 tests for CRUD operations:
+Implemented 20 api for CRUD operations:
 
-PostTodoTest (Create)
+api.PostTodoTest (Create)
 - ✅ userCanCreateValidTodo
 - ✅ userCanBeInformedAboutMissedField
 - ✅ userCanBeInformedOnDuplicateId
 - ✅ userCanBeInformedAboutTooLongText
 - ✅ userCanCreateTodoWithEmptyText
 
-GetTodoTest (Read)
+api.GetTodoTest (Read)
 - ✅ userCanReadTodo
 - ✅ userCanReadTodoWithQueryParams
 - ✅ userCanReadTodoWithLimitZero
 - ✅ userCanReadTodoWithLargeLimit
 - ✅ userCanNotReadTodoWithNegativeLimit
 
-PutTodoTest (Update)
+api.PutTodoTest (Update)
 - ✅ userCanUpdateTodo
 - ✅ userCanNotUpdateNonExistentTodo
 - 🚨 userCanNotUpdateTodoWithIncompleteBody
 - 🚨 userCanNotUpdateTodoWithInvalidTypeFormat
 - ✅ userCanUpdateTodoWithEmptyText
 
-DeleteTodoTest (Delete)
+api.DeleteTodoTest (Delete)
 - ✅ userCanDeleteTodo
 - ✅ userCanNotDeleteNonExistentTodo
 - ✅ userCanNotDeleteTodoWithoutAuthorization
@@ -83,7 +80,7 @@ At functional testing of CRUD methods the bugs are detected:
    Expect: 400 Bad Request, but actual: 401 Unauthorized
 
 ### 2. Performance testing
-- LogTimeExtractor
+- api.LogTimeExtractor
 Test analysed logs of application.
 1000 POST requests selected.
 Average response time is 106 µs.
@@ -91,7 +88,7 @@ No errors were found.
 Under sequential load, the server remains stable, the time does not increase noticeably.
 Conclusion: POST /todos performance is within normal limits for the basic load.
 
-- PostPerformanceTest
+- api.PostPerformanceTest
 Test sent 1000 POST requests.
 Average response time is 12258 µs.
 

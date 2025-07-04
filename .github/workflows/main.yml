@@ -1,0 +1,29 @@
+name: Todo deployment
+
+on: push
+
+jobs:
+  # Собирается бекенд и деплоится на стейдж/review app
+  backend:
+    uses: ./.github/workflows/backend-stage.yml
+
+  # Прогоняются API тесты
+  automation-api:
+    needs: backend
+    uses: ./.github/workflows/automation.yml
+    secrets:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+  manual-prod-approval:
+    needs: automation-api
+    runs-on: ubuntu-latest
+    environment: 'prod'
+    steps:
+      - name: Approve backend to production
+        run: echo Approved to production
+
+  # Деплой бекэнда на прод
+  deploy-prod:
+    needs: manual-prod-approval
+    uses: ./.github/workflows/deploy-prod.yml

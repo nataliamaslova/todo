@@ -1,3 +1,5 @@
+package api;
+
 import api.models.Todo;
 import api.specs.Specifications;
 import io.restassured.RestAssured;
@@ -43,7 +45,7 @@ public class DeleteTodoTest extends BaseTest {
         // 1. Arrange
         todoService.create(todo, HttpStatus.SC_CREATED);
 
-        // Hook In order not to delete twice due to clearData at @AfterEach at BaseTest
+        // Hook In order not to delete twice due to clearData at @AfterEach at tests.BaseTest
         List<Long> createdTodos = todoService.getCreatedTodos();
         createdTodos.remove(todo.getId());
         todoService.setCreatedTodos(createdTodos);
