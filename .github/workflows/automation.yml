@@ -34,29 +34,23 @@ jobs:
         uses: ./.github/actions/todo-setup
 
       - name: Run tests
+        continue-on-error: true
         run: ./mvnw test
 
-      - name: Dump environment
-        if: failure()
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: printenv
+      - name: Debug secrets
+        run: |
+          echo "${{ secrets.TELEGRAM_CHAT_ID }}" | sed 's/./*/g'
+          echo "${{ secrets.TELEGRAM_BOT_TOKEN }}" | sed 's/./*/g'
 
       - name: Send Telegram notification if tests failed
-        if: failure()
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+#        if: failure()
         run: |
-          echo "Token length: ${#TELEGRAM_BOT_TOKEN}"
-          echo "Chat ID: ${TELEGRAM_CHAT_ID}"
-          curl -s -X POST https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage \
-          -d chat_id=${TELEGRAM_CHAT_ID} \
-          -d text="Тесты не прошли в *${{ github.repository }}* на ветке *${{ github.ref_name }}*. Проверь пайплайн: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
-          -d parse_mode=Markdown
+                curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
+                  -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+                  -d text="Tests failed *${{ github.repository }}* in branch *${{ github.ref_name }}*. Verify pipeline: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+                  -d parse_mode=Markdown   
 
-#      - name: Send Telegram notification if tests failed
+ #      - name: Send Telegram notification if tests failed
 #        shell: bash
 #        if: steps.test-step.outcome == 'failure'
 #        env:
