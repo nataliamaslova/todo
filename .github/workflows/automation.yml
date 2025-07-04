@@ -41,6 +41,7 @@ jobs:
         uses: ./.github/actions/todo-setup
 
       - name: Run tests
+        id: test-step
         continue-on-error: true
         run: ./mvnw test
 
@@ -50,6 +51,7 @@ jobs:
           echo "${{ secrets.TELEGRAM_CHAT_ID }}" | sed 's/./*/g'
 
       - name: Send Telegram notification if tests failed
+        if: steps.test-step.outcome == 'failure'
         run: |
           curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
             -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
