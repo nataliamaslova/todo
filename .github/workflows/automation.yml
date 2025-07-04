@@ -1,5 +1,12 @@
 name: Run tests
-on: workflow_call
+on:
+  workflow_call:
+    secrets:
+      TELEGRAM_BOT_TOKEN:
+        required: true
+      TELEGRAM_CHAT_ID:
+        required: true
+
 
 jobs:
   validate-checkstyle:
@@ -37,11 +44,13 @@ jobs:
         continue-on-error: true
         run: ./mvnw test
 
-
-      - name: Debug secrets
+      - name: Dump secrets
         run: |
-          echo "Token length: ${#TELEGRAM_BOT_TOKEN}"
-          echo "Chat ID: ${TELEGRAM_CHAT_ID}"
+          echo "${{ secrets.TELEGRAM_BOT_TOKEN }}" | sed 's/./*/g'
+          echo "${{ secrets.TELEGRAM_CHAT_ID }}" | sed 's/./*/g'
+          echo "${TELEGRAM_BOT_TOKEN }" | sed 's/./*/g'
+          echo "${TELEGRAM_CHAT_ID }" | sed 's/./*/g'
+
 
       - name: Send Telegram notification if tests failed
         run: |
@@ -50,7 +59,7 @@ jobs:
             -d text="Tests failed in *${{ github.repository }}* on branch *${{ github.ref_name }}*. Check: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
             -d parse_mode=Markdown  
 
- #      - name: Send Telegram notification if tests failed
+#      - name: Send Telegram notification if tests failed
 #        shell: bash
 #        if: steps.test-step.outcome == 'failure'
 #        env:
